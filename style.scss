@@ -1,0 +1,191 @@
+body{
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(245, 245, 246, 1);
+    padding: 15px 100px;
+    .logo{
+        width: 90px;
+        img{
+            width: 100%;
+        }
+    }
+    ul{
+        display: flex;
+        list-style: none;
+        align-items: center;
+        gap: 13px;
+        li{
+            font-weight: 500;
+            font-size: 11px;
+            color: rgba(149, 155, 164, 1);
+        }
+        li:first-child{
+            color:rgba(0, 0, 0, 1);
+        }
+    }
+    button{
+        width: 60px;
+        height: 33px;
+        font-weight: bold;
+        font-size: 11px;
+        color: rgba(0, 0, 0, 1);
+        background-color: white;
+        border: none;
+        outline: none;
+        border-radius: 4px;
+    }
+}
+
+#exchange{
+    padding-top: 56px;
+    .contain{
+        width: 50%;
+        margin: auto;
+        h1{
+            font-weight: 700;
+            font-size: 36px;
+            color: black;
+        }
+        .exchange-div{
+            margin-top: 33px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .exchange-first{
+                width: 45%;
+                span{
+                    font-weight: 400;
+                    font-size: 12px;
+                    color: rgba(159, 159, 159, 1);
+                    margin-bottom: 10px;
+                    display: inline-block;
+                }
+                .list-exchange{
+                    display: flex;
+                    align-items: center;
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;                    
+                    li{
+                        cursor: pointer;
+                        width: 25%;
+                        height: 30px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: rgba(198, 198, 198, 1);
+                        border: 1px solid rgba(229, 229, 229, 1);
+                    }
+                    li:first-child{
+                        border-top-left-radius: 3px;
+                        border-bottom-left-radius: 3px;
+                    }
+                    li:last-child{
+                        border-top-right-radius: 3px;
+                        border-bottom-right-radius: 3px;
+                    }
+                }
+                .money-div{
+                    margin-top: 20px;
+                    border: 1px solid rgba(229, 229, 229, 1);
+                    border-radius: 3px;
+                    padding: 11px 15px;
+                    input{
+                        width: 95%;
+                        border: none;
+                        outline: none;
+                        height: 40px;
+                        font-weight: 700;
+                        font-size: 36px;
+                        color: black;
+                    }
+                    span{
+                        display: inline-block;
+                        margin-top: 20px;
+                        font-weight: 400;
+                        font-size: 14px;
+                        color: rgba(198, 198, 198, 1);
+                    }
+                }
+            }
+            .exchange-second{
+                width: 45%;
+                span{
+                    font-weight: 400;
+                    font-size: 12px;
+                    margin-bottom: 10px;
+                    display: inline-block;
+                    color: rgba(159, 159, 159, 1);
+                }
+                .list-exchange{
+                    display: flex;
+                    align-items: center;
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;                    
+                    border-top-left-radius: 3px;
+                    border-bottom-left-radius: 3px;
+                    li{
+                        cursor: pointer;
+                        width: 25%;
+                        height: 30px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: rgba(198, 198, 198, 1);
+                        border: 1px solid rgba(229, 229, 229, 1);
+                    }
+                    li:first-child{
+                        border-top-left-radius: 3px;
+                        border-bottom-left-radius: 3px;
+                    }
+                    li:last-child{
+                        border-top-right-radius: 3px;
+                        border-bottom-right-radius: 3px;
+                    }
+                }
+                .money-div{
+                    margin-top: 20px;
+                    border: 1px solid rgba(229, 229, 229, 1);
+                    border-radius: 3px;
+                    padding: 11px 15px;
+                    input{
+                        width: 95%;
+                        border: none;
+                        outline: none;
+                        height: 40px;
+                        font-weight: 700;
+                        font-size: 36px;
+                        color: black;
+                    }
+                    span{
+                        display: inline-block;
+                        margin-top: 20px;
+                        font-weight: 400;
+                        font-size: 14px;
+                        color: rgba(198, 198, 198, 1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo"><img src="./images/exhangelogo.png" alt="Logo"></div>
+            <ul>
+                <li>БАНК</li>
+                <li>БИЗНЕС</li>
+                <li>ИНВЕСТИЦИИ</li>
+                <li>СТРАХОВАНИЕ</li>
+                <li>МОБАЙЛ</li>
+                <li>ПУТЕШЕСТВИЯ</li>
+                <li>РАЗВЛЕЧЕНИЯ</li>
+            </ul>
+            <button>ВОЙТИ</button>
+        </div>
+    </header>
+    <section id="exchange">
+        <div class="contain">
+            <h1>Конвертер валют онлайн</h1>
+            <div class="exchange-div">
+                <div class="exchange-first">
+                    <span>У меня есть </span>
+                    <ul class="list-exchange">
+                        <li style="background-color: rgba(131, 58, 224, 1);">RUB</li>
+                        <li>USD</li>
+                        <li>EUR</li>
+                        <li>GBP</li>
+                    </ul>
+                    <div class="money-div">
+                        <input type="number" id="sourceAmount" value="100">
+                        <span id="sourceCurrency">RUB</span>
+                        <span id="sourceExchangeRate">1 RUB = 0.0135 USD</span>
+                    </div>
+                </div>
+                <div class="exchange-second">
+                    <span>Хочу приобрести</span>
+                    <ul class="list-exchange">
+                        <li>RUB</li>
+                        <li style="background-color: rgba(131, 58, 224, 1);">USD</li>
+                        <li>EUR</li>
+                        <li>GBP</li>
+                    </ul>
+                    <div class="money-div">
+                        <input type="number" id="targetAmount">
+                        <span id="targetCurrency">USD</span>
+                        <span id="targetExchangeRate">1 RUB = 0.0135 USD</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./app.js"></script>
+</body>
+</html>
