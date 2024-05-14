@@ -1,38 +1,37 @@
-body{
+body {
     font-family: "Roboto", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
-.container{
+.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: rgba(245, 245, 246, 1);
     padding: 15px 100px;
-    .logo{
+    .logo {
         width: 90px;
-        img{
+        img {
             width: 100%;
         }
     }
-    ul{
+    ul {
         display: flex;
         list-style: none;
         align-items: center;
         gap: 13px;
-        li{
+        li {
             font-weight: 500;
             font-size: 11px;
             color: rgba(149, 155, 164, 1);
         }
-        li:first-child{
-            color:rgba(0, 0, 0, 1);
+        li:first-child {
+            color: rgba(0, 0, 0, 1);
         }
     }
-    button{
+    button {
         width: 60px;
         height: 33px;
         font-weight: bold;
@@ -45,37 +44,37 @@ body{
     }
 }
 
-#exchange{
+#exchange {
     padding-top: 56px;
-    .contain{
+    .contain {
         width: 50%;
         margin: auto;
-        h1{
+        h1 {
             font-weight: 700;
             font-size: 36px;
             color: black;
         }
-        .exchange-div{
+        .exchange-div {
             margin-top: 33px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            .exchange-first{
+            .exchange-first {
                 width: 45%;
-                span{
+                span {
                     font-weight: 400;
                     font-size: 12px;
                     color: rgba(159, 159, 159, 1);
                     margin-bottom: 10px;
                     display: inline-block;
                 }
-                .list-exchange{
+                .list-exchange {
                     display: flex;
                     align-items: center;
                     margin: 0;
                     padding: 0;
-                    list-style: none;                    
-                    li{
+                    list-style: none;
+                    li {
                         cursor: pointer;
                         width: 25%;
                         height: 30px;
@@ -85,21 +84,21 @@ body{
                         color: rgba(198, 198, 198, 1);
                         border: 1px solid rgba(229, 229, 229, 1);
                     }
-                    li:first-child{
+                    li:first-child {
                         border-top-left-radius: 3px;
                         border-bottom-left-radius: 3px;
                     }
-                    li:last-child{
+                    li:last-child {
                         border-top-right-radius: 3px;
                         border-bottom-right-radius: 3px;
                     }
                 }
-                .money-div{
+                .money-div {
                     margin-top: 20px;
                     border: 1px solid rgba(229, 229, 229, 1);
                     border-radius: 3px;
                     padding: 11px 15px;
-                    input{
+                    input {
                         width: 95%;
                         border: none;
                         outline: none;
@@ -108,7 +107,7 @@ body{
                         font-size: 36px;
                         color: black;
                     }
-                    span{
+                    span {
                         display: inline-block;
                         margin-top: 20px;
                         font-weight: 400;
@@ -117,24 +116,24 @@ body{
                     }
                 }
             }
-            .exchange-second{
+            .exchange-second {
                 width: 45%;
-                span{
+                span {
                     font-weight: 400;
                     font-size: 12px;
                     margin-bottom: 10px;
                     display: inline-block;
                     color: rgba(159, 159, 159, 1);
                 }
-                .list-exchange{
+                .list-exchange {
                     display: flex;
                     align-items: center;
                     margin: 0;
                     padding: 0;
-                    list-style: none;                    
+                    list-style: none;
                     border-top-left-radius: 3px;
                     border-bottom-left-radius: 3px;
-                    li{
+                    li {
                         cursor: pointer;
                         width: 25%;
                         height: 30px;
@@ -144,21 +143,21 @@ body{
                         color: rgba(198, 198, 198, 1);
                         border: 1px solid rgba(229, 229, 229, 1);
                     }
-                    li:first-child{
+                    li:first-child {
                         border-top-left-radius: 3px;
                         border-bottom-left-radius: 3px;
                     }
-                    li:last-child{
+                    li:last-child {
                         border-top-right-radius: 3px;
                         border-bottom-right-radius: 3px;
                     }
                 }
-                .money-div{
+                .money-div {
                     margin-top: 20px;
                     border: 1px solid rgba(229, 229, 229, 1);
                     border-radius: 3px;
                     padding: 11px 15px;
-                    input{
+                    input {
                         width: 95%;
                         border: none;
                         outline: none;
@@ -167,7 +166,7 @@ body{
                         font-size: 36px;
                         color: black;
                     }
-                    span{
+                    span {
                         display: inline-block;
                         margin-top: 20px;
                         font-weight: 400;
@@ -180,12 +179,8 @@ body{
     }
 }
 
-
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
-
-
-

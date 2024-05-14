@@ -39,7 +39,7 @@
                     </ul>
                     <div class="money-div">
                         <input type="number" id="sourceAmount" value="100">
-                        <span id="sourceCurrency">RUB</span>
+                        <span id="sourceCurrency" style="display: none;">RUB</span>
                         <span id="sourceExchangeRate">1 RUB = 0.0135 USD</span>
                     </div>
                 </div>
@@ -53,11 +53,13 @@
                     </ul>
                     <div class="money-div">
                         <input type="number" id="targetAmount">
-                        <span id="targetCurrency">USD</span>
+                        <span id="targetCurrency" style="display: none;">USD</span>
                         <span id="targetExchangeRate">1 RUB = 0.0135 USD</span>
                     </div>
                 </div>
             </div>
+
+            <div class="error"></div>
         </div>
     </section>
 
