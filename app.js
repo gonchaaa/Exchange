@@ -4,12 +4,12 @@ const sourceCurrencySpan = document.getElementById("sourceCurrency");
 const targetCurrencySpan = document.getElementById("targetCurrency");
 const sourceExchangeRateSpan = document.getElementById("sourceExchangeRate");
 const targetExchangeRateSpan = document.getElementById("targetExchangeRate");
-const error = document.querySelector('.error')
-const errorText = document.createElement('p')
+const error = document.querySelector('.error');
+const errorText = document.createElement('p');
 
-error.append(errorText)
+error.append(errorText);
 
-const API_URL = "https://v6.exchangerate-api.com/v6/f042570fb25bb227b790b7fb/latest/";
+const API_URL = "https://v6.exchangerate-api.com/v6/802cac745bdb6a306821d848/latest/";
 
 let currentExchangeRate = 0;
 let lastUpdatedInput = null;
@@ -31,14 +31,18 @@ function fetchExchangeRate(baseCurrency, targetCurrency) {
             }
         })
         .catch(error => {
-            errorText.textContent = "Internet yoxdur, zəhmət olmasa şəbəkəyə qoşulun"
-            errorText.style.color = "red"
-            errorText.style.fontSize = "25px"
+            errorText.textContent = "Internet yoxdur, zəhmət olmasa şəbəkəyə qoşulun";
+            errorText.style.color = "red";
+            errorText.style.fontSize = "25px";
         });
 }
 
+function formatInputValue(value) {
+    return value.replace(',', '.');
+}
+
 function convertCurrencyFromSource() {
-    const sourceAmount = parseFloat(sourceAmountInput.value);
+    const sourceAmount = parseFloat(formatInputValue(sourceAmountInput.value));
     if (!isNaN(sourceAmount)) {
         const targetAmount = sourceAmount * currentExchangeRate;
         targetAmountInput.value = targetAmount.toFixed(4);
@@ -48,7 +52,7 @@ function convertCurrencyFromSource() {
 }
 
 function convertCurrencyFromTarget() {
-    const targetAmount = parseFloat(targetAmountInput.value);
+    const targetAmount = parseFloat(formatInputValue(targetAmountInput.value));
     if (!isNaN(targetAmount)) {
         const sourceAmount = targetAmount / currentExchangeRate;
         sourceAmountInput.value = sourceAmount.toFixed(4);
@@ -57,12 +61,12 @@ function convertCurrencyFromTarget() {
     }
 }
 
-sourceAmountInput.addEventListener("keyup", function () {
+sourceAmountInput.addEventListener("input", function () {
     lastUpdatedInput = 'first';
     convertCurrencyFromSource();
 });
 
-targetAmountInput.addEventListener("keyup", function () {
+targetAmountInput.addEventListener("input", function () {
     lastUpdatedInput = 'second';
     convertCurrencyFromTarget();
 });
@@ -129,4 +133,3 @@ firstListExchange.addEventListener("click", handleListItemClick);
 
 const secondListExchange = document.querySelector(".exchange-second .list-exchange");
 secondListExchange.addEventListener("click", handleListItemClick);
-
