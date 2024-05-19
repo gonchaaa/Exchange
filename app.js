@@ -115,10 +115,12 @@ function handleListItemClick(event) {
     const listItems = event.currentTarget.querySelectorAll("li");
     listItems.forEach(item => {
         item.style.backgroundColor = "";
+        item.style.color = "";
     });
     const clickedItem = event.target.closest("li");
     if (clickedItem) {
         clickedItem.style.backgroundColor = "rgba(131, 58, 224, 1)";
+        clickedItem.style.color = "white";
     }
 }
 
